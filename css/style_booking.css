@@ -1,0 +1,473 @@
+*{ padding: 0; margin: 0; box-sizing: border-box;}
+*:focus{ outline: none;}
+::selection{ background-color: transparent;}
+input{ }
+body{ font-family: 'Poppins', sans-serif;}
+
+.car-pic-secton img:hover{ transform: scale(1.05); transition: .4s;}
+
+#preloader{ position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 9999; background-color: #fff; padding: 0 40%;}
+
+.loader{ background-color: #424242; width: 300px; padding: 20px 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 50px; z-index: 9999;}
+.loader-bg{ background-color: #424242; width: 100%; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 999; bottom: 0; right: 0;}
+.lbg, .pbg{ margin: 0; padding: 0;}
+.lbg{ background-color: #fff; height: 6px; border-radius: 50px;}
+.pbg{ background-color: #f7b71d !important;}
+.ltext{ font-size: 16px; font-weight: 500; padding-bottom: 5px; letter-spacing: 1px;}
+
+.animate{ animation: reveal .8s linear;}
+@keyframes reveal{
+    0%{ height: 100vh;}
+    50%{ height: 50vh;}
+    100%{ height: 0;}
+}
+
+.bg-clr{ background-color: #f7b71d !important;}
+
+body p{ font-size: 18px; line-height: 1.5;}
+
+.top-nav{ background-color: transparent; position: fixed; top: 0; left: 0; width: 100%; z-index: 99;}
+.top-nav .brand-logo{ font-size: 20px; font-weight: 800; text-transform: uppercase;}
+.brand-logo span{ color: #f7b71d;}
+
+.act{ color: #f7b71d !important;}
+.top-nav li a:hover{ color: #f7b71d;}
+.wrap-1{ height: 900px; background-attachment: fixed; position: relative;}
+
+.sidenav{ background-color: #fafafa;}
+.sidenav .background{ background-image: url(../image/bg_2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;}
+.sidenav .user-view{ padding: 40px 10px; text-align: center;}
+.sidenav .user-view span{ font-size: 18px !important; font-weight: 700 !important;}
+.sidenav .menu a{ color: #000;}
+.sidenav .menu a:hover{ color: #f7b71d;}
+.sidenav .menu:hover a{ transform: translateX(10px) scale(.95); width: 85%;}
+
+
+.bread{ background-color: transparent; padding-top: 50%; border: none; box-shadow: none;}
+
+.dcar-bread{ padding-top: 30%;}
+
+.main-head{ padding: 2px 10px; display: inline-block; border: 5px solid; border-color: transparent transparent transparent #f7b71d;}
+.main-head h2{ margin: 0;}
+
+.header-page::before{ background-image: url(../image/bg_2.jpg); background-size: cover; content: ""; display: block; top: 0; left: 0; width: 100%; background-position: bottom; height: 740px; background-attachment: fixed; position: absolute; z-index: -2;}
+.header-page::after{ content: ""; display: block; background-color: rgba(0,0,0,1); top: 0; left: 0; width: 100%; height: 740px; position: absolute; z-index: -1; opacity: .5; background-attachment: fixed;}
+.header-page{ height: 740px; background-attachment: fixed; position: relative;}
+
+.dcar-page{ height: 550px;}
+.dcar-page::before{ height: 550px;}
+.dcar-page::after{ height: 550px;}
+
+.wrap-1::before{ background-image: url(../img/bg_1.jpg); background-size: cover; content: ""; display: block; top: 0; left: 0; width: 100%; opacity:; background-rpeat: no-repeat; background-position: center; height: 900px; background-attachment: fixed; position: absolute; z-index: -2;}
+
+.wrap-1::after{ content: ""; display: block; background-color: rgba(0,0,0,1); top: 0; left: 0; width: 100%; height: 900px; position: absolute; z-index: -1; opacity: .5; background-attachment: fixed;}
+
+.type{ font-size: 14px; font-weight: 700; color: #fc983c; letter-spacing: 1px;}
+.whead{ font-size: 36px; font-weight: 700; letter-spacing: 2px;}
+
+
+.wrap-1-content{ padding-top: 200px;}
+.wrap-1-content .intro p{ font-weight: 200;}
+.white-text{ color: #fff;}
+.wrap-1-content h1{ padding: 0;}
+h1{ font-size: 60px; line-height: 1.1; font-weight: 300;}
+
+.trip-table-btn{ margin-top: 30px;}
+.trip-table{ pdding: 0 40px !important; transform: translateX(30%); display: none;}
+.trip-table h4{ font-size: 30px; font-weight: 600;}
+.trip-form{ background-color: #fff; padding: 40px; border-radius: 10px;}
+.trip-head{ font-size: 16px; font-weight: 500;}
+
+.video{ margin: 40px 0;}
+.video img{ height: 80px;}
+.video:hover{ cursor: pointer;}
+.video a{ color: #fff;}
+.video .play-text p{ font-size: 20px; font-weight: 500 !important; margin-top: 15px; padding: 10px 0;}
+
+
+.wrap-2{ padding: 40px 0;}
+.wrap-2 .select-box{ padding: 0 30px; padding-bottom: 80px;}
+.search-box{ position: relative;}
+.wrap-2 .search{ position: absolute; left: 50% !important; bottom: 0%; transform: translate(-50%);}
+
+.service-page{ padding: 60px 0;}
+.shead{ font-size: 18px; font-weight: 500;}
+.scontent{ font-size: 16px; font-weight: 300; text-align: center;}
+.service-page .services img{ height: 60px;}
+
+.tring{ animation: tring .4s ease;}
+
+@keyframes tring{
+    0%{ transform: rotate(0deg);}
+    30%{ transform: rotate(30deg) scale(2);}
+    70%{ transform: rotate(-60deg);}
+    100%{ transform: rotate(0deg) scale(1);}
+}
+
+
+.cars-page{ padding: 60px 0;}
+.cars-page .card:hover{ transform: scale(.98); cursor: pointer; transition: .2s; box-shadow: 2px 4px 10px;}
+.cars-page .card-content{ position: relative;}
+.cars-page .rent-charge{ color: #fc983c; font-size: 20px; font-weight: 500;}
+.cars-page .cprice p{ font-size: 10px;}
+.cars-page .card-content .cprice{ display: inline-block; padding: 2px 4px; position: absolute; top: 0; left: 0; transform: translate(0,-70%); background-color: #fff;}
+.cars-page .card-title{ font-size: 20px; font-weight: 500;}
+
+.cars-page .card-image{ height: 180px; overflow: hidden;}
+.cars-page .brand-name{ font-size: 15px; letter-spacing: 1px;}
+
+.todo-section{ margin: 0 !important;}
+.cars-page .card-content{ padding: 40px 30px;}
+.cars-page .card-action a{ font-size: 14px; padding: 10px; text-transform: capitalize !important; color: #000 !important; margin-right: 0 !important; border-radius: 20px;}
+.cars-page .card-action a:hover{ background-color: #fc983c; transition: .4s !important;}
+
+.pagination{ margin-top: 80px;}
+
+
+
+
+
+
+.workflow-page{ backgroun-image: url(../img/bg_1.jpg); backgound-size: cover; backgound-repeat: no-repeat; eight: 500px; padding: 80px 0; backgrond-position: center; background-attachment: fixed; opacity:; position: relative;}
+
+.workflow-page::before{ content: ""; display: block; background-image: url(../image/bg_2.jpg);background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-attachment: fixed; z-index: -2;}
+.workflow-page::after{ content: ""; display: block; background: rgba(0,0,0,1); position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: -1; opacity: .6; background-attachment: fixed;}
+
+
+
+.work-flow{ margin-top: 60px;}
+.workflow-page .work-flow .work{ display: inline-block; border: 2px solid #000; border-radius: 50%; padding: 5px; background-color: #fff;}
+.workflow-page .work-flow .work:hover{ background-color: #fc983c;}
+.workflow-page .work-flow img{ height: 80px; padding: 15px 20px;}
+.workflow-page .wf-head{ font-size: 18px; font-weight: 500;}
+.workflow-page .wf-content{ font-size: 16px; font-weight: 300; margin-top: 10px;}
+
+.testimonial-page{ padding: 60px 0;}
+.testimonial-page .client .card{ padding: 30px 20px;}
+.testimonial-page .cimg{ padding: 10px 60px 10px;}
+.testimonial-page .client .card img{ border-radius: 50%; border: 1px solid #fc983c; padding: 2px;}
+.testimonial{ font-size: 15px; margin: 30px 0;}
+.cname{ font-size: 24px; font-weight: 500; color: #fc983c; margin: 20px;}
+.cpost{ font-size: 14px; letter-spacing: 1px; margin: 10px 20px;}
+
+
+.aboutus-page{ padding: 60px 0;}
+.aboutus-page .about-details{ padding: 20px;}
+.aboutus-page .about-content{ font-size: 18px; font-weight: 300; text-align: justify; margin: 20px 0;}
+.aboutus-page .abtn{ display: block;}
+
+.wrap-8{ padding: 60px 0;}
+.wrap-8 .blog-img{ height: 200px;}
+.wrap-8 .admin{ font-size: 12px; letter-spacing: 1px; margin-top: 10px; text-align: center;}
+.blog-head{ font-size: 16px; font-weight: 500; margin-top: 30px;}
+.blog-content{ font-size: 15px; margin-top: 10px;}
+.wrap-8 .card{ paddig: 20px 0;}
+
+.blog-section, .client-section, .work-flow, .our-cars-section, .services{ padding-top: 50px;}
+
+.footer-page{ padding: 100px 0; background-color: #000;}
+
+.fhead{ font-size: 18px; font-weight: 600;}
+.fcontent{ font-size: 16px; margin-top: 40px; font-weight: 200;}
+.list-head, .list{ padding-left: 10px !important;}
+.fcontent i{ margin-right: 10px;}
+footer ul li{ margin-bottom: 10px; padding: 5px 0;}
+footer ul li a{ color: #fff;}
+footer ul li a:hover{ color: #fc983c; cursor: pointer;}
+.social{ margin-top: 20px; padding: 5px 0;}
+.social i{ margin-right: 10px; padding: 10px; font-size: 20px;}
+.social i:hover{ cursor: pointer; transform: translateY(10px) scale(1.5); transition: .4s; color: #fc983c;}
+.query li:hover i{ color: #fc983c; transform: scale(1.5) rotate(360deg); transition: .6s;}
+.tag{ margin-top: 60px; font-weight: 300; font-size: 16px;}
+
+
+.address-page{ padding: 80px 0;}
+.sborder{ border: 1px solid; border-color: transparent #bdbdbd;}
+.address-page .box{ padding: 40px 10px;}
+.location-page{ padding: 30px 0;}
+.message-page{ padding: 80px 0;}
+
+.adhead{ font-size: 20px; font-weight: 500;}
+.adcontent{ font-size: 16px; font-weight: 300; word-spacing: 1px;}
+.location-page iframe{ width: 100%;}
+.chat-head{ margin: 10px 0 60px;}
+.msghead{ font-size: 24px; line-height: 1.5; font-weight: 500;}
+
+.chat-box{ padding: 0 100px;}
+.chat-box form{ background-color: #eeeeee; padding: 40px 80px;}
+.chat-box button{ margin-top: 30px;}
+
+.price-page{ padding: 80px 0;}
+
+.table-car{ height: 80px !important; width: 130px;}
+
+.t-content{ }
+.tc-name{ font-size: 18px; font-weight: 600; text-align: center;}
+.tc-price{ color: #fc983c; font-size: 20px; font-weight: 600;}
+.tc-duration{ font-size: 16px; font-weight: 500; color: #757575;}
+.tc-content{ font-size: 14px; font-weight: 500; margin: 10px 0;}
+
+table i, .td-stars i{ color: #ffc400;}
+
+.not-star{ color: #bdbdbd !important;}
+.tc-head{ font-size: 18px; font-weight: 700;}
+table p{ text-align: center;}
+
+.stars{ text-align: center;}
+.cars-img{ text-align: center;}
+
+.blog-page{ padding: 80px 0;}
+.blogs{ padding: 30px 0 !important;}
+.ad-blog{ font-size: 15px; letter-spacing: 1px; margin: 10px 0; color: #9e9e9e;}
+.blg-head{ font-size: 18px; margin: 10px 0; font-weight: 500;}
+.blg-content{ font-size: 16px; line-height: 1.5; margin: 10px; color: #757575;}
+.read-more{ margin: 15px 0;}
+
+.car-details-page{ padding: 80px 0;}
+.car-pic-section{ transform: translateX(-40px);}
+.detail-table{ transform: translateX(40px);}
+.car-instructions{ margin-top: 50px;}
+.instruction-head{ font-size: 18px; font-weight: 600;}
+.instruction-content{ font-size: 16px; font-weight: 300;}
+.dt-head{ font-size: 16px;}
+.dt-day{ font-size: 14px; font-weight: 400;}
+.dt-content{ font-size: 14px;}
+.dt-btn{ margin-top: 10px;}
+.dt-review{ margin-top: 60px;}
+.tdr-head{ font-size: 18px; font-weight: 500;}
+.specs{ font-size: 14px; margin: 5px 0; font-weight: 500;}
+.td-ratings{ margin-top: 10px;}
+.td-stars{ padding: 0 5px;}
+.td-stars i{ font-size: 8px;}
+
+
+
+.booking-page{ padding: 80px 0;}
+.bpage-trip-section{ padding: 40px 20px;}
+.minput{ margin-top: 20px;}
+input{ margin-bottom: 0 !important;}
+
+.bpage-customer-details{ padding: 40px 20px;}
+
+.confirm-booking-page{ padding: 20px 0 40px;}
+
+.bpage-heads{ font-size: 26px;}
+
+.notice-head h3{ margin: 0; font-size: 34px; font-weight: 500;}
+.notice-head{ padding: 20px 10px; color: #fff;}
+.notice-content h5{ margin: 0; padding: 10px 0; font-size: 24px; font-weight: 500; line-height: 1.4;}
+.notice{ position: relative; padding: 60px 0;}
+.notice-content p{ font-size: 16px;}
+.notice-content{ padding: 30px 10px;}
+.notice-content .booking-details{ margin: 10px 20px; display: inline-block;} 
+.notice-content .booking-details li{ list-style: square; margin: 5px; padding: 0 5px;}
+.cnf-btn{ transform: translateX(-50%); position: absolute; left: 50%; bottom: 0;}
+
+.greet-head{ font-weight: 600;}
+.greet-content{ font-size: 20px; margin: 20px 0;}
+.greet{ font-size: 18px; font-weight: 500; letter-spacing: 1px;}
+
+/*---------------------------------------------------------------responsive-design-----------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width:1220px){
+    
+    h1{ font-size: 52px; line-height: 1.1; font-weight: 300;}
+
+    .trip-table h4{ font-size: 24px; font-weight: 600;}
+.trip-form{ padding: 20px;}
+.trip-head{ font-size: 15px;}
+
+    .cars-page .card-image{ height: 130px; overflow: hidden;}
+    .cars-page .brand-name{ font-size: 14px;}
+    .cars-page .card-action a{ font-size: 12px; padding: 5px;}
+    
+    .aboutus-page .about-img img{ height: 650px;}
+    
+    .fhead{ font-size: 16px; font-weight: 400;}
+    .fcontent{ font-size: 12px; margin-top: 30px; font-weight: 200;}
+    .tag{ font-size: 14px;}
+    .bread{ padding-top: 60%;}
+    .adcontent{ font-size: 16px; font-weight: 400; word-spacing: 1px;}
+    
+    .notice-content h5{ font-size: 22px;}
+    .notice-content p{ font-size: 15px;}
+}
+
+
+@media screen and (max-width:980px){
+     .wrap-1-content{ padding-top: 200px;}
+    h1{ font-size: 42px; margin: 0;}
+    .wrap-1-content .intro p{ font-weight: 300; text-align: justify; font-size: 16px; margin-top: 30px;}
+    .trip-table{ transform: translateX(0%);}
+    
+    .service-page .service{ margin-bottom: 60px;}
+    .service-page .scontent{ font-size: 15px;}
+    
+    .cars-page .card-title{ font-size: 15px; font-weight: 500;}
+    .cars-page .brand-name{ font-size: 12px; letter-spacing: 1px;}
+    .cars-page .card-action a{ font-size: 14px; padding: 4px;}
+    
+    .workflow-page .steps{ margin-bottom: 60px;}
+    
+    .aboutus-page .about-content{ font-size: 16px;}
+    .aboutus-page .about-img img{ height: 600px;}
+    
+    .wrap-8 .admin{ font-size: 10px; word-spacing: 2px;}
+    .blog-head{ font-size: 15px;}
+    .blog-content{ font-size: 13px;}
+    
+    .fcontent{ margin-top: 20px;}
+    .fpart{ margin-bottom: 30px;}
+    
+    .adcontent{ font-size: 15px; font-weight: 400; word-spacing: 1px;}
+    
+    .tc-head{ font-size: 18px; font-weight: 600; padding: 35px 10px;}
+    
+     .car-pic-section{ transform: translateX(0);}
+.detail-table{ transform: translateX(0);}
+    .car-instructions{ margin-top: 80px;}
+    .instruction-content{ margin-bottom: 40px;}
+    .detail-table table{ margin-top: 50px;}
+    .dt-content{ padding: 25px 10px !important;}
+    .dt-btn{ margin-top: 40px;}
+    .dt-review{ margin-top: 100px;}
+    
+    .td-ratings{ margin-top: 40px;}
+.td-stars{ padding: 0 10px;}
+.td-stars i{ font-size: 10px;}
+    .specs{ margin: 10px 0;}
+    
+    .notice-head h3{ font-size: 30px;}
+    .notice-content h5{ font-size: 20px;}
+    .notice-content p{ margin-top: 20px;}
+    
+    .video img{ height: 50px;}
+    .video .play-text p{ margin-top: 5px; font-size: 14px;}
+}
+
+
+@media screen and (max-width:768px){
+    
+    
+    .top-nav{}
+    .whead{ font-size: 30px; font-weight: 600;}
+    .wrap-1-content{ padding-top: 200px;}
+    .wrap-1-content h1{ padding: 30px 0;}
+     h1{ font-size: 40px;}
+    .trip-table-btn{ margin-top: 30px;}
+.trip-table h4{ font-size: 26px;}
+.trip-form{ padding: 20px; border-radius: 10px;}
+.trip-head{ font-size: 16px; font-weight: 500;}
+    
+    .cars-page .card-action a{ font-size: 12px;}
+    
+    .workflow-page .wf-content{ font-size: 15px;}
+    
+    .testimonial-page .cimg{ padding: 10px 40px 10px;}
+    
+    .chat-box{ padding: 0 80px;}
+    .bread{ padding-top: 70%;}
+    
+    .dcar-bread{ padding-top: 50%;}
+    
+    .car-instructions{ margin: 40px 0;}
+    
+    
+    tbody{ text-align: center !important;}
+    .dt-head{ font-size: 14px; text-align: left !important;}
+    .dt-content{ padding: 20px 10px !important;}
+    
+   
+   
+    .notice-content .booking-details{ margin: 10px; display: inline-block;} 
+.notice-content .booking-details li{ list-style: square; margin: 4px; padding: 0 5px; font-size: 13px;}
+    
+    
+    
+}
+
+
+@media screen and (max-width:460px){
+    
+    .video{ margin-bottom: 60px;}
+    .video .play-text p{ margin-bottom: 0 !important; margin-top: 4px !important;}
+    
+    .dcar-page{ height: 550px; background-attachment: inherit;}
+.dcar-page::before{ height: 550px; background-attachment: inherit;}
+.dcar-page::after{ height: 550px; background-attachment: inherit;}
+    
+    .wrap-1{ height: 1200px;}
+    .wrap-1::before{ height: 1200px;}
+    .wrap-1::after{ height: 1200px; opacity: .6;}
+    .wrap-1-content{ padding-top: 100px;}
+    h1{ font-size: 44px; font-weight: 400;}
+    .wrap-1-content .intro p{ font-weight: 300; text-align: justify; font-size: 16px; margin-top: 0px; margin-bottom: 40px;}
+    .wrap-1 .trip-form h4{ text-align: center; margin-bottom: 30px;}
+    .trip-form{ padding: 10px;}
+    
+    .cars-page .card-image{ height: auto; overflow: hidden;}
+    .cars-page .brand-name{ font-size: 14px;}
+    .cars-page .card-action a{ font-size: 15px;}
+    .cars-page .card-title{ font-size: 18px;}
+    
+    .workflow-page .wf-head{ font-size: 20px;}
+    .workflow-page .wf-content{ font-size: 16px; font-weight: 300;}
+    
+    .testimonial-page .cimg{ padding: 10px 60px 10px;}
+    
+    .aboutus-page .about-img img{ height: auto;}
+    .aboutus-page .about-content{ font-size: 16px; text-align: justify;}
+    
+    .wrap-8 .blog{ margin-bottom: 40px;}
+    .wrap-8 .admin{ margin-top: 0;}
+    .blog-head{ font-size: 16px; font-weight: 500; margin-top: 10px;}
+.blog-content{ font-size: 14px; margin-top: 10px; text-align: justify;}
+    .wrap-8 .blog-img{ width: 100%;}
+    
+    .fcontent{ margin-top: 10px;}
+    .tag{ font-size: 12px;}
+    
+    .sborder{ border: none;}
+    .msghead{ font-size: 22px;}
+    .chat-box{ padding: 0;}
+    .chat-box form{ padding: 20px;}
+    
+    .tc-head{ font-size: 18px; font-weight: 600; padding: 35px 10px;}
+    
+    .bread{ padding-top: 130%;}
+    
+    .select-box{ padding: 10px !important;}
+    .search{ bottom: -50px !important;}
+    .service-page{ margin-top: 40px;}
+    
+    .ad-blog{ font-size: 12px;}
+    .blg-head{ font-size: 16px;}
+    .blg-content{ font-size: 14px; text-align: justify;}
+    .read-more a{ font-size: 12px;}
+    
+    .instruction-content{ text-align: justify;}
+    
+    .dcar-bread{ padding-top: 90%;}
+    .car-instructions{ margin: 60px 0 40px;}
+    .instruction-content{ margin-bottom: 40px;}
+    
+    .notice-head h3{ font-size: 26px;}
+    .notice-content h5{ font-size: 18px;}
+    .notice-content p{ font-size: 14px; margin-top: 20px;}
+    
+    .greet-head{ font-weight: 600;}
+.greet-content{ font-size: 16px;}
+.greet{ font-size: 18px; font-weight: 500; letter-spacing: 1px;}
+}
+footer{
+	height: 120px;
+	width: "100%";
+	background-color: #ffee80;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial;
+    margin-top: 100px;
+}

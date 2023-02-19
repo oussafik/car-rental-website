@@ -1,0 +1,33 @@
+.select {
+	height: 36px;
+	border: none;
+	font-size: 1.75rem;
+	outline: none;
+	opacity: 1;
+	-webkit-opacity: .85;
+	-moz-opacity: 1;
+	-webkit-padding: 2rem 3rem;
+	-moz-padding: 0;
+	-o-padding: 0;
+	-ms-padding: 0;
+
+	&--bigger {
+		width: 246.5px;
+	}
+
+	&--smaller {
+		width: 180px;
+	}
+}
+
+@media (max-width: 880px) {
+	.select {
+		&--bigger {
+			width: 100%;
+		}
+
+		&--smaller {
+			width: 100%;
+		}
+	}
+}
