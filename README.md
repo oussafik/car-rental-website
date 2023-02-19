@@ -3,11 +3,11 @@
 This is a car rental website built using HTML, CSS, JavaScript, SQL, and Bootstrap.
 
 ## Table of Contents
-Introduction
-Features
-Technologies Used
-Installation and Usage
-Contributing
+- Introduction
+- Features
+- Technologies Used
+- Installation and Usage
+- Contributing
 
 
 
@@ -32,7 +32,6 @@ To use the car rental website, you will need to:
 
 1. Clone the repository: git clone https://github.com/oussafik/car-rentar-website.git
 2. Create a database in SQL and import the SQL file in the database folder
-3. Configure the database settings in the config.php file
 4. Start a web server and open the website in a web browser
 
 ## Contributing
